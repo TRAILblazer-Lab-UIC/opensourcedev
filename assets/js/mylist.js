@@ -81,7 +81,7 @@
   }
   function base() { return location.href.replace(/mylist\.html.*$/, ''); }
   function toMarkdown() {
-    var out = ['# My OS Developer Field Guide list', ''];
+    var out = ["# My Open Developer's Field Guide list", ''];
     items.forEach(function (it) {
       out.push('## ' + it.n, '', it.t || '', '', it.meta || '', '');
       (it.steps || []).forEach(function (s) { out.push('- [ ] ' + s); });

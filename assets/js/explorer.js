@@ -1,4 +1,4 @@
-/* OS Developer Field Guide: faceted search, idea tiles, category buttons, and the specimen of the day.
+/* Open Developer's Field Guide: faceted search, idea tiles, category buttons, and the gadget of the day.
    Data: data/platforms.json (same origin). DOM text uses textContent only. State lives in the URL hash. */
 (function () {
   'use strict';

@@ -1,4 +1,4 @@
-# OS Developer Field Guide
+# Open Developer's Field Guide
 
 A field guide to open-source hardware in the wild. It covers microcontrollers, dev kits, single-board computers, AI boards, FPGA boards, robots, cameras, audio, wearables, and radios.
 

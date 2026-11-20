@@ -1,4 +1,4 @@
-# OS Developer Field Guide security headers (Apache / LAMP hosting).
+# Open Developer's Field Guide security headers (Apache / LAMP hosting).
 # Edit FRAME_PARENT to your WordPress domain to allow embedding there.
 <IfModule mod_headers.c>
   Header always set Content-Security-Policy "default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; connect-src 'self'; frame-ancestors 'self' https://www.trailblazerlab.org https://trailblazerlab.org"
