@@ -666,3 +666,13 @@ body { line-height: 1.65; }
   .idea-tiles, .learn-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .mini-meter { grid-template-columns: 64px 1fr 48px; }
 }
+
+/* Uniform "learn the basics" tiles */
+.learn-links { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); grid-auto-rows: 1fr; }
+.learn-links li { display: flex; }
+.learn-links a { flex: 1; min-height: 72px; line-height: 1.3; }
+@media (max-width: 720px) { .learn-links { grid-template-columns: 1fr; grid-auto-rows: auto; } }
+.idea-tiles { grid-auto-rows: 1fr; }
+.idea-tiles li { display: flex; }
+.idea-tile { flex: 1; }
+@media (max-width: 720px) { .idea-tiles { grid-auto-rows: auto; } }

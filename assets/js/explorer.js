@@ -187,7 +187,7 @@
     list.slice(0, state.shown).forEach(function (r) { frag.appendChild(card(r.it)); });
     ul.appendChild(frag);
     window.FAE.wireStars(ul);
-    els.count.textContent = list.length === 1 ? '1 species found' : list.length + ' species found';
+    els.count.textContent = list.length === 1 ? '1 gadget found' : list.length + ' gadgets found';
     els.more.hidden = list.length <= state.shown;
     var notes = [];
     if (state.recipe) notes.push('Showing gear that can build: ' + recipes[state.recipe].title + '.');
