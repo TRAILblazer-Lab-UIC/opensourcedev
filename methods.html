@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" data-v="6b0a6fc73d">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; connect-src 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>How We Built the Field Guide | OS Developer Field Guide</title>
+<meta name="description" content="How We Built the Field Guide">
+<link rel="stylesheet" href="assets/css/site.css?v=30added637">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<script src="assets/js/common.js?v=30added637" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html"><svg class="brand-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M7 6h3v4M14 6h3v4M4 14a3.5 3.5 0 1 0 7 0 3.5 3.5 0 0 0-7 0zM13 14a3.5 3.5 0 1 0 7 0 3.5 3.5 0 0 0-7 0zM5 13l2-5M19 13l-2-5M11 13h2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>OS Developer Field Guide</span></a>
+    <nav aria-label="Main"><ul class="nav"><li><a href="index.html">Explore</a></li><li><a href="recipes.html">Project Recipes</a></li><li><a href="learn.html">Learn the Basics</a></li><li><a href="glossary.html">Glossary</a></li><li><a href="mylist.html">My List <span class="count" data-list-count></span></a></li><li><a href="about.html">About</a></li></ul></nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap prose"><h1 id="how-we-built-the-field-guide">How We Built the Field Guide</h1>
+<p>This page explains how each entry was found, researched, labeled and written. The short version comes first. Technical details follow in expandable sections.</p>
+<h2 id="the-short-version">The short version</h2>
+<ol>
+<li>We searched open board lists, maker catalogs and hardware news for open-source gear.</li>
+<li>An AI research agent studied each item. It read official pages, datasheets, design files and store listings. It saved every fact with a source.</li>
+<li>Python scripts checked each research file. Missing facts, bad links and odd prices were flagged and fixed.</li>
+<li>Rules turned the facts into labels and scores.</li>
+<li>AI agents rated ease of use with a fixed rubric.</li>
+<li>AI agents wrote each page in plain words from the research file only.</li>
+<li>A style checker and a person reviewed the pages.</li>
+</ol>
+<h2 id="how-the-scores-work">How the scores work</h2>
+
+<h3 id="openness">Openness</h3>
+<div class="table-wrap"><table class="compare"><thead><tr><th scope="col">Level</th><th scope="col">The rule</th></tr></thead><tbody><tr><th scope="row">Wild Open</th><td data-label="The rule">Full board design files under an open license, plus fully open coding tools</td></tr><tr><th scope="row">Open Board</th><td data-label="The rule">Board design files or schematics are public, and the main tools are open or mostly open</td></tr><tr><th scope="row">Open Code</th><td data-label="The rule">The coding tools and software are open, but the board design is private</td></tr></tbody></table></div>
+<p>Gear that meets none of these rules stays out of the guide.</p>
+<h3 id="capacity">Capacity</h3>
+<p>Capacity runs from 0 to 100. It answers one question. How much work can this board juggle at once? The score blends six parts.</p>
+<div class="table-wrap"><table class="compare"><thead><tr><th scope="col">Part</th><th scope="col">Weight</th><th scope="col">What it measures</th></tr></thead><tbody><tr><th scope="row">Compute</th><td data-label="Weight">25%</td><td data-label="What it measures">Processor cores times speed, on a log scale</td></tr><tr><th scope="row">Memory</th><td data-label="Weight">25%</td><td data-label="What it measures">Working memory, on a log scale</td></tr><tr><th scope="row">Storage</th><td data-label="Weight">10%</td><td data-label="What it measures">Space for programs and files, on a log scale</td></tr><tr><th scope="row">Pins</th><td data-label="Weight">15%</td><td data-label="What it measures">Input and output pins, up to 40</td></tr><tr><th scope="row">Radios</th><td data-label="Weight">10%</td><td data-label="What it measures">Built-in radios, up to 3</td></tr><tr><th scope="row">AI chip</th><td data-label="Weight">15%</td><td data-label="What it measures">AI speed in TOPS, on a log scale</td></tr></tbody></table></div>
+<p>Log scales keep giant boards from crowding out small ones. A board twice as fast does not get twice the score. Some entries lack a spec. Those entries say their score may run low.</p>
+<h3 id="value-for-money">Value for money</h3>
+<p>Value divides capacity by the square root of the lowest price we found. The square root keeps costly boards in the running. The result becomes a meter from 1 to 5. A cheap, capable microcontroller often scores high. A powerful AI board can score well too.</p>
+<h3 id="affordability-and-starter-cost">Affordability and starter cost</h3>
+<p>The price band uses the lowest US price we found. The starter cost adds a typical cable, power supply and a few first parts.</p>
+<h3 id="easy-to-buy-in-the-us">Easy to buy in the US</h3>
+<div class="table-wrap"><table class="compare"><thead><tr><th scope="col">Label</th><th scope="col">The rule</th></tr></thead><tbody><tr><th scope="row">Easy to find</th><td data-label="The rule">Three or more US stores showed it in stock</td></tr><tr><th scope="row">A few stores</th><td data-label="The rule">One or two US stores list it</td></tr><tr><th scope="row">Import only</th><td data-label="The rule">Only stores outside the US list it</td></tr></tbody></table></div>
+<h3 id="rubric-scores">Rubric scores</h3>
+<p>AI agents scored ease of use, code needed, effort, docs quality and community size. Each score follows written anchors. The guide marks these scores with an asterisk. Each one shows a short reason on its page. "Newcomer friendly" requires an ease score of 4 or 5, beginner-level code or less, and decent docs.</p>
+<h3 id="build-ideas">Build ideas</h3>
+<p>Each entry lists 10 to 20 build ideas. Every idea names the abilities it needs. A script rejects any idea that needs an ability the board lacks. A board with no camera port gets no camera ideas.</p>
+<h2 id="prices">Prices</h2>
+<p>Agents copied prices from store pages on the date shown. Some stores block automated visits. Those stores may be missing. Prices are estimates and can change at any time. Price and availability vary by vendor. We do not refresh prices on a schedule.</p>
+<details class="expand"><summary>Technical details: pipeline and files</summary><div class="expand-body"><h2 id="pipeline">Pipeline</h2>
+<p>The project runs as Python 3 scripts with YAML and CSV files. No paid AI service is called from code. Research and writing agents ran inside Claude Code.</p>
+<div class="table-wrap"><table class="compare"><thead><tr><th scope="col">Stage</th><th scope="col">Script or file</th><th scope="col">Output</th></tr></thead><tbody><tr><th scope="row">Research</th><td data-label="Script or file">docs/agent_briefs/dossier.md</td><td data-label="Output">research/dossiers/(slug).md</td></tr><tr><th scope="row">Dossier checks</th><td data-label="Script or file">pipeline/p1_validate_dossiers.py</td><td data-label="Output">Errors and warnings per file</td></tr><tr><th scope="row">Rule labels</th><td data-label="Script or file">pipeline/p2_rules.py and config/scoring.yaml</td><td data-label="Output">classification/rules.csv</td></tr><tr><th scope="row">Rubric</th><td data-label="Script or file">docs/agent_briefs/profile.md, pipeline/p2_validate.py</td><td data-label="Output">classification/classified.csv</td></tr><tr><th scope="row">Page text</th><td data-label="Script or file">content/platforms/(slug).md, pipeline/p3_validate_content.py</td><td data-label="Output">Checked page text</td></tr><tr><th scope="row">Build</th><td data-label="Script or file">pipeline/build_site.py</td><td data-label="Output">The static site</td></tr></tbody></table></div>
+<h2 id="checks">Checks</h2>
+<ul>
+<li>Every dossier needs three or more distinct sources.</li>
+<li>Every price needs a store link and a checked date.</li>
+<li>Numbers must be numbers. Labels must come from fixed lists.</li>
+<li>Every idea's needs must match the board's abilities.</li>
+<li>Every page passes the style checker.</li>
+<li>Links to known bad domains are removed.</li>
+</ul></div></details>
+
+<details class="expand"><summary>Technical details: agreement checks</summary><div class="expand-body"><p>Rubric scores will be double-coded on a sample of entries. A second agent scores the same entries blind. Weighted kappa measures agreement. Fields below 0.7 get revised anchors and a rescore. Results will appear here once the full catalog is scored.</p></div></details>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>An AI-assisted experiment by Jeremy Riel, PhD, UIC TRAILblazer Lab. Some content was written with generative AI and may contain errors. Check details with each maker and store before you buy.</p>
+    <p>Prices are estimates and can change at any time. Price and availability vary by vendor.</p>
+    <p><a href="about.html">About this project</a> · <a href="methods.html">How we built it</a> · <a href="learn.html">Learn the Basics</a> · <a href="recipes.html">Project Recipes</a> · <a href="glossary.html">Glossary</a></p>
+    <p><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Dark mode</button></p>
+    <div class="logos logos-footer"><a class="logo-plate logo-uic" href="https://www.uic.edu" rel="noopener noreferrer"><img src="assets/img/uic-circle.svg" alt="" width="40" height="40"><span>University of Illinois<br>Chicago</span></a><a class="logo-plate logo-tb" href="https://www.trailblazerlab.org" rel="noopener noreferrer"><img src="assets/img/trailblazer-lab-logo.png" alt="TRAILblazer Lab, Teaching and Research with AI Learning" width="900" height="278"></a></div>
+  </div>
+</footer>
+</body>
+</html>

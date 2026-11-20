@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" data-v="6b0a6fc73d">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; connect-src 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Radios Explained | OS Developer Field Guide</title>
+<meta name="description" content="Radios Explained">
+<link rel="stylesheet" href="assets/css/site.css?v=30added637">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<script src="assets/js/common.js?v=30added637" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html"><svg class="brand-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M7 6h3v4M14 6h3v4M4 14a3.5 3.5 0 1 0 7 0 3.5 3.5 0 0 0-7 0zM13 14a3.5 3.5 0 1 0 7 0 3.5 3.5 0 0 0-7 0zM5 13l2-5M19 13l-2-5M11 13h2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>OS Developer Field Guide</span></a>
+    <nav aria-label="Main"><ul class="nav"><li><a href="index.html">Explore</a></li><li><a href="recipes.html">Project Recipes</a></li><li><a href="learn.html" aria-current="page">Learn the Basics</a></li><li><a href="glossary.html">Glossary</a></li><li><a href="mylist.html">My List <span class="count" data-list-count></span></a></li><li><a href="about.html">About</a></li></ul></nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap prose"><h1 id="radios-explained">Radios Explained</h1>
+<p>Many boards have a built-in radio. A radio lets your gadget talk with no wires. Each kind of radio trades distance, speed and battery life.</p>
+<div class="table-wrap"><table class="compare"><thead><tr><th scope="col">Radio</th><th scope="col">How far it reaches</th><th scope="col">How much it can send</th><th scope="col">Battery life</th><th scope="col">Good for</th></tr></thead><tbody><tr><th scope="row">Wi-Fi</th><td data-label="How far it reaches">Across a house</td><td data-label="How much it can send">A lot, even video</td><td data-label="Battery life">Short</td><td data-label="Good for">Sending data to the internet</td></tr><tr><th scope="row">Bluetooth Low Energy</th><td data-label="How far it reaches">Across a room</td><td data-label="How much it can send">A little</td><td data-label="Battery life">Long</td><td data-label="Good for">Talking to a phone</td></tr><tr><th scope="row">Thread and Zigbee</th><td data-label="How far it reaches">Across a house, hop by hop</td><td data-label="How much it can send">A little</td><td data-label="Battery life">Long</td><td data-label="Good for">Smart-home sensors and switches</td></tr><tr><th scope="row">LoRa</th><td data-label="How far it reaches">Several miles</td><td data-label="How much it can send">Very little</td><td data-label="Battery life">Very long</td><td data-label="Good for">Farms, trails and remote sensors</td></tr><tr><th scope="row">Cellular</th><td data-label="How far it reaches">Almost anywhere with phone service</td><td data-label="How much it can send">A lot</td><td data-label="Battery life">Short</td><td data-label="Good for">Trackers that roam far</td></tr></tbody></table></div>
+<h2 id="wi-fi">Wi-Fi</h2>
+<p>Wi-Fi joins your home or school network. It can reach the internet. It sends lots of data fast. It also drains batteries quickly. Most Wi-Fi projects plug into the wall.</p>
+<h2 id="bluetooth-low-energy">Bluetooth Low Energy</h2>
+<p>Bluetooth Low Energy talks to phones, tablets and laptops nearby. It uses very little power. It is great for wearables, game controllers and fitness trackers.</p>
+<h2 id="thread-and-zigbee">Thread and Zigbee</h2>
+<p>Thread and Zigbee build mesh networks for smart homes. Each device passes messages to the next one. A message can hop across the whole house. Many smart lights and sensors use them.</p>
+<h2 id="lora">LoRa</h2>
+<p>LoRa stands for long range. A LoRa radio sends tiny messages over miles. It needs very little power. A sensor in a field can report for a year on a small battery. LoRa sends short notes only. It cannot carry photos or video.</p>
+<h2 id="mesh-networks-and-meshtastic">Mesh networks and Meshtastic</h2>
+<p>A mesh network has no central tower. Every radio passes messages along to its neighbors. The network grows stronger with each new radio.</p>
+<p>Meshtastic is a free, open-source project that builds a text-message mesh on LoRa radios. You pair a small radio with your phone over Bluetooth. Then you can text friends miles away with no cell service. Hikers, campers and emergency volunteers use it. Many cheap boards run Meshtastic with no coding.</p>
+<h2 id="a-note-on-rules">A note on rules</h2>
+<p>Radios must follow local laws. LoRa uses different frequencies in different countries. The US uses 915 MHz. Europe uses 868 MHz. Buy the version made for your region.</p><nav class="learn-nav" aria-label="Field guide basics"><ol><li><a href="open-source.html">What is open source?</a></li><li><a href="brains.html">Brains: microcontrollers and small computers</a></li><li><a href="how-it-connects.html">How a project fits together</a></li><li><a href="code-to-board.html">How code gets onto a board</a></li><li><a href="connectors.html">Plug-and-play connectors</a></li><li><a href="radios.html">Radios explained</a></li><li><a href="first-board.html">Choosing your first board</a></li></ol></nav></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>An AI-assisted experiment by Jeremy Riel, PhD, UIC TRAILblazer Lab. Some content was written with generative AI and may contain errors. Check details with each maker and store before you buy.</p>
+    <p>Prices are estimates and can change at any time. Price and availability vary by vendor.</p>
+    <p><a href="about.html">About this project</a> · <a href="methods.html">How we built it</a> · <a href="learn.html">Learn the Basics</a> · <a href="recipes.html">Project Recipes</a> · <a href="glossary.html">Glossary</a></p>
+    <p><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Dark mode</button></p>
+    <div class="logos logos-footer"><a class="logo-plate logo-uic" href="https://www.uic.edu" rel="noopener noreferrer"><img src="assets/img/uic-circle.svg" alt="" width="40" height="40"><span>University of Illinois<br>Chicago</span></a><a class="logo-plate logo-tb" href="https://www.trailblazerlab.org" rel="noopener noreferrer"><img src="assets/img/trailblazer-lab-logo.png" alt="TRAILblazer Lab, Teaching and Research with AI Learning" width="900" height="278"></a></div>
+  </div>
+</footer>
+</body>
+</html>

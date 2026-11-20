@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en" data-v="6b0a6fc73d">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; connect-src 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>How a Project Fits Together | OS Developer Field Guide</title>
+<meta name="description" content="How a Project Fits Together">
+<link rel="stylesheet" href="assets/css/site.css?v=30added637">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<script src="assets/js/common.js?v=30added637" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html"><svg class="brand-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M7 6h3v4M14 6h3v4M4 14a3.5 3.5 0 1 0 7 0 3.5 3.5 0 0 0-7 0zM13 14a3.5 3.5 0 1 0 7 0 3.5 3.5 0 0 0-7 0zM5 13l2-5M19 13l-2-5M11 13h2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>OS Developer Field Guide</span></a>
+    <nav aria-label="Main"><ul class="nav"><li><a href="index.html">Explore</a></li><li><a href="recipes.html">Project Recipes</a></li><li><a href="learn.html" aria-current="page">Learn the Basics</a></li><li><a href="glossary.html">Glossary</a></li><li><a href="mylist.html">My List <span class="count" data-list-count></span></a></li><li><a href="about.html">About</a></li></ul></nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap prose"><h1 id="how-a-project-fits-together">How a Project Fits Together</h1>
+<p>Almost every gadget has five parts. Learn these five and you can read nearly any project.</p>
+<figure class="connect-diagram"><svg viewBox="0 0 640 300" role="img" aria-labelledby="cd-title"><title id="cd-title">Power feeds the brain. Inputs send readings to the brain. The brain controls outputs and talks over connections.</title><defs><marker id="cd-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="cd-arrowhead"/></marker></defs><rect x="250" y="20" width="140" height="56" rx="12" class="cd-box cd-power"/><text x="320.0" y="54" class="cd-text">1. Power</text><rect x="250" y="122" width="140" height="56" rx="12" class="cd-box cd-brain"/><text x="320.0" y="156" class="cd-text">2. Brain</text><rect x="20" y="122" width="150" height="56" rx="12" class="cd-box cd-in"/><text x="95.0" y="156" class="cd-text">3. Inputs</text><rect x="470" y="122" width="150" height="56" rx="12" class="cd-box cd-out"/><text x="545.0" y="156" class="cd-text">4. Outputs</text><rect x="250" y="224" width="140" height="56" rx="12" class="cd-box cd-link"/><text x="320.0" y="258" class="cd-text">5. Connections</text><path d="M320 76v42" class="cd-arrow" marker-end="url(#cd-arrow)"/><path d="M170 150h76" class="cd-arrow" marker-end="url(#cd-arrow)"/><path d="M390 150h76" class="cd-arrow" marker-end="url(#cd-arrow)"/><path d="M320 178v42" class="cd-arrow" marker-start="url(#cd-arrow)" marker-end="url(#cd-arrow)"/></svg><figcaption>Power feeds the brain. Inputs send readings in. The brain drives the outputs and talks over its connections.</figcaption></figure>
+<h2 id="1-power">1. Power</h2>
+<p>Power is the food for your gadget. Most boards get power from a USB cable. Portable projects use batteries. Big motors need their own larger power supply.</p>
+<h2 id="2-the-brain">2. The brain</h2>
+<p>The brain is the board that runs your code. It reads the inputs and decides what to do. Then it tells the outputs to act. The <a href="brains.html">Brains page</a> explains the two main kinds.</p>
+<h2 id="3-inputs">3. Inputs</h2>
+<p>Inputs are the senses of your gadget. They tell the brain about the world.</p>
+<ul>
+<li>Buttons and switches notice a press.</li>
+<li>Temperature sensors feel heat and cold.</li>
+<li>Light sensors see brightness.</li>
+<li>Motion sensors notice movement or tilt.</li>
+<li>Microphones hear sound.</li>
+<li>Cameras see pictures.</li>
+</ul>
+<h2 id="4-outputs">4. Outputs</h2>
+<p>Outputs are how your gadget acts on the world.</p>
+<ul>
+<li>LEDs and light strips glow in any color.</li>
+<li>Screens show words and pictures.</li>
+<li>Speakers and buzzers make sound.</li>
+<li>Motors spin wheels and fans.</li>
+<li>Servo motors turn to an exact angle.</li>
+<li>Relays switch big devices on and off.</li>
+</ul>
+<h2 id="5-connections">5. Connections</h2>
+<p>Connections let the gadget talk to other gadgets or to you. A USB cable is the simplest. Radios such as Wi-Fi, Bluetooth and LoRa work with no wires. The <a href="radios.html">Radios page</a> explains each one.</p>
+<h2 id="how-the-parts-link-up">How the parts link up</h2>
+<p>The brain has rows of metal pins along its edges. Each pin can read an input or control an output. Wires link the pins to sensors and other parts.</p>
+<p>Beginners often use a breadboard. A breadboard is a plastic board full of holes. You push wires and parts into the holes. Nothing needs solder. You can pull everything apart and try again.</p>
+<p>Plug-in connectors make this even easier. One small cable carries power and data together. The <a href="connectors.html">connectors page</a> shows how they work.</p>
+<h2 id="a-worked-example-a-plant-helper">A worked example: a plant helper</h2>
+<div class="table-wrap"><table class="compare"><thead><tr><th scope="col">Part</th><th scope="col">What you use</th></tr></thead><tbody><tr><th scope="row">Power</th><td data-label="What you use">A USB phone charger</td></tr><tr><th scope="row">Brain</th><td data-label="What you use">A small Wi-Fi microcontroller board</td></tr><tr><th scope="row">Input</th><td data-label="What you use">A soil moisture sensor in the pot</td></tr><tr><th scope="row">Output</th><td data-label="What you use">A small water pump and a green LED</td></tr><tr><th scope="row">Connection</th><td data-label="What you use">Wi-Fi sends a message to your phone</td></tr></tbody></table></div>
+<p>The code checks the soil every hour. Dry soil turns on the pump for a few seconds. The LED glows green once the soil is damp. A message lets you know your plant had a drink.</p><nav class="learn-nav" aria-label="Field guide basics"><ol><li><a href="open-source.html">What is open source?</a></li><li><a href="brains.html">Brains: microcontrollers and small computers</a></li><li><a href="how-it-connects.html">How a project fits together</a></li><li><a href="code-to-board.html">How code gets onto a board</a></li><li><a href="connectors.html">Plug-and-play connectors</a></li><li><a href="radios.html">Radios explained</a></li><li><a href="first-board.html">Choosing your first board</a></li></ol></nav></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>An AI-assisted experiment by Jeremy Riel, PhD, UIC TRAILblazer Lab. Some content was written with generative AI and may contain errors. Check details with each maker and store before you buy.</p>
+    <p>Prices are estimates and can change at any time. Price and availability vary by vendor.</p>
+    <p><a href="about.html">About this project</a> · <a href="methods.html">How we built it</a> · <a href="learn.html">Learn the Basics</a> · <a href="recipes.html">Project Recipes</a> · <a href="glossary.html">Glossary</a></p>
+    <p><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Dark mode</button></p>
+    <div class="logos logos-footer"><a class="logo-plate logo-uic" href="https://www.uic.edu" rel="noopener noreferrer"><img src="assets/img/uic-circle.svg" alt="" width="40" height="40"><span>University of Illinois<br>Chicago</span></a><a class="logo-plate logo-tb" href="https://www.trailblazerlab.org" rel="noopener noreferrer"><img src="assets/img/trailblazer-lab-logo.png" alt="TRAILblazer Lab, Teaching and Research with AI Learning" width="900" height="278"></a></div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en" data-v="6b0a6fc73d">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; connect-src 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>OS Developer Field Guide: Open-Source Hardware in the Wild</title>
+<meta name="description" content="A field guide to open-source hardware: microcontrollers, dev boards, AI boards, robots and radios, with prices, specs and build ideas.">
+<link rel="stylesheet" href="assets/css/site.css?v=30added637">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<script src="assets/js/common.js?v=30added637" defer></script><script src="assets/js/explorer.js?v=30added637" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html"><svg class="brand-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M7 6h3v4M14 6h3v4M4 14a3.5 3.5 0 1 0 7 0 3.5 3.5 0 0 0-7 0zM13 14a3.5 3.5 0 1 0 7 0 3.5 3.5 0 0 0-7 0zM5 13l2-5M19 13l-2-5M11 13h2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>OS Developer Field Guide</span></a>
+    <nav aria-label="Main"><ul class="nav"><li><a href="index.html" aria-current="page">Explore</a></li><li><a href="recipes.html">Project Recipes</a></li><li><a href="learn.html">Learn the Basics</a></li><li><a href="glossary.html">Glossary</a></li><li><a href="mylist.html">My List <span class="count" data-list-count></span></a></li><li><a href="about.html">About</a></li></ul></nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<section class="hero">
+  <div class="wrap hero-grid">
+  <div class="hero-inner">
+    <p class="hero-kicker">A field guide to open-source hardware in the wild</p>
+    <h1>OS Developer Field Guide</h1>
+    <p class="lead">Spot, compare and choose open-source boards, brains and gadgets for your next build. Every entry lists real prices, real stores and ideas sized to what it can really do.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary btn-big" href="#ideas">Find something to build</a>
+      <a class="btn btn-big btn-soft" href="learn.html">New here? Learn the basics</a>
+    </div>
+    <p class="hero-note"><svg class="note-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M7 6h3v4M14 6h3v4M4 14a3.5 3.5 0 1 0 7 0 3.5 3.5 0 0 0-7 0zM13 14a3.5 3.5 0 1 0 7 0 3.5 3.5 0 0 0-7 0zM5 13l2-5M19 13l-2-5M11 13h2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> 261 gadgets spotted in the wild so far. New sightings are added as they hatch.</p>
+    <details class="howto">
+      <summary>How to use this field guide</summary>
+      <div class="howto-body">
+        <ol>
+          <li>Pick an idea below. The guide shows gear that can build it.</li>
+          <li>Or browse by hardware type, such as microcontroller brains, AI boards or radios.</li>
+          <li>Turn on Newcomer friendly to see gear that suits first-time builders.</li>
+          <li>Read the labels and meters on each card. They show openness, price, US stores, capacity and value.</li>
+          <li>Open an entry for specs in plain words, 10 to 20 build ideas, a starter checklist and a price table.</li>
+          <li>Select the star to save an entry to <a href="mylist.html">My List</a>. Print it or share it.</li>
+        </ol>
+        <p>Every entry was researched and written with help from AI. Prices are estimates and can change at any time. Check each store before you buy.</p>
+      </div>
+    </details>
+  </div>
+  <div class="hero-visual"><svg class="hero-art" viewBox="0 0 420 340" aria-hidden="true" focusable="false"><path d="M30 70q90-26 180 0v240q-90-26-180 0z" class="ha-page"/><path d="M210 70q90-26 180 0v240q-90-26-180 0z" class="ha-page"/><path d="M210 70v240" class="ha-spine"/><rect x="80" y="128" width="116" height="86" rx="8" class="ha-board"/><path d="M92 128v-10M92 214v10" class="ha-line"/><path d="M106 128v-10M106 214v10" class="ha-line"/><path d="M120 128v-10M120 214v10" class="ha-line"/><path d="M134 128v-10M134 214v10" class="ha-line"/><path d="M148 128v-10M148 214v10" class="ha-line"/><path d="M162 128v-10M162 214v10" class="ha-line"/><path d="M176 128v-10M176 214v10" class="ha-line"/><rect x="118" y="152" width="40" height="38" rx="4" class="ha-chipbody"/><path d="M126 162h24M126 171h24M126 180h16" class="ha-line"/><rect x="84" y="160" width="14" height="22" rx="3" class="ha-usb"/><circle cx="182" cy="140" r="5" class="ha-led"/><path d="M60 248h120M60 264h90M60 280h104" class="ha-note"/><rect x="262" y="160" width="72" height="54" rx="8" class="ha-board"/><path d="M318 160v-46" class="ha-line"/><circle cx="318" cy="110" r="5" class="ha-led"/><path d="M300 98a24 24 0 0 1 36 0M290 86a38 38 0 0 1 56 0" class="ha-wave"/><path d="M276 176h28M276 188h20" class="ha-line"/><path d="M240 248h120M240 264h96M240 280h110" class="ha-note"/><path d="M232 120h40l10 10-10 10h-40z" class="ha-tag"/><circle cx="240" cy="130" r="3" class="ha-tagdot"/><circle cx="150" cy="96" r="34" class="ha-lens"/><path d="M174 120l26 26" class="ha-handle"/><path d="M60 40l3 8 8 3-8 3-3 8-3-8-8-3 8-3zM372 46l2.5 6.5 6.5 2.5-6.5 2.5-2.5 6.5-2.5-6.5-6.5-2.5 6.5-2.5z" class="ha-spark"/></svg></div>
+  </div>
+</section>
+
+<section class="band band-specimen" aria-labelledby="specimen-heading">
+  <div class="wrap specimen-wrap">
+    <div class="specimen-text">
+      <p class="browse-kicker">Specimen of the day</p>
+      <h2 id="specimen-heading">Spotted in the wild today</h2>
+      <p class="band-lead">A new entry from the guide each day. Come back tomorrow for another sighting.</p>
+    </div>
+    <ul id="specimen" class="cards specimen-list" aria-live="off"></ul>
+  </div>
+</section>
+
+<section class="band band-ideas" id="ideas" aria-labelledby="ideas-heading">
+  <div class="wrap">
+    <h2 id="ideas-heading">What do you want to make?</h2>
+    <p class="band-lead">Pick an idea. The guide shows every entry with the right abilities. See all 21 <a href="recipes.html">project recipes</a> with parts lists.</p>
+    <ul class="idea-tiles"><li><a class="idea-tile" href="#finder" data-idea="plant-helper" aria-pressed="false"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M5 19c0-8 6-14 15-14 0 9-6 15-14 15M5 19l7-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Plant helper</span></a></li><li><a class="idea-tile" href="#finder" data-idea="weather-station" aria-pressed="false"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M7 18h10a4 4 0 0 0 .5-8A5.5 5.5 0 0 0 7 9a4.5 4.5 0 0 0 0 9z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Backyard weather station</span></a></li><li><a class="idea-tile" href="#finder" data-idea="robot-car" aria-pressed="false"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M8 8h8v8H8zM12 4v4M10 4h4M6 11H4v3h2M18 11h2v3h-2M10 12h.01M14 12h.01M9 19v2M15 19v2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Small robot car</span></a></li><li><a class="idea-tile" href="#finder" data-idea="wildlife-camera" aria-pressed="false"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M4 8h4l2-3h4l2 3h4v11H4zM12 10a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Wildlife camera</span></a></li><li><a class="idea-tile" href="#finder" data-idea="mesh-messenger" aria-pressed="false"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M12 13v8M8 21h8M12 13a1.5 1.5 0 1 0 0-.01M8.5 9.5a5 5 0 0 1 7 0M6 7a8.5 8.5 0 0 1 12 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Off-grid text messenger</span></a></li><li><a class="idea-tile" href="#finder" data-idea="music-box" aria-pressed="false"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M9 18V5l11-2v13M9 18a3 3 0 1 1-3-3 3 3 0 0 1 3 3zM20 16a3 3 0 1 1-3-3 3 3 0 0 1 3 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Electronic music box</span></a></li><li><a class="idea-tile" href="#finder" data-idea="smart-glasses" aria-pressed="false"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M2 12h4l2-3h8l2 3h4M6 12a3 3 0 1 0 6 0M12 12a3 3 0 1 0 6 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Smart glasses helper</span></a></li><li><a class="idea-tile" href="#finder" data-idea="air-quality" aria-pressed="false"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M3 8h11a3 3 0 1 0-3-3M3 12h15a3 3 0 1 1-3 3M3 16h8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Air quality monitor</span></a></li><li><a class="idea-tile" href="#finder" data-idea="voice-assistant" aria-pressed="false"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M9 4a3 3 0 0 1 6 0v7a3 3 0 0 1-6 0zM5 11a7 7 0 0 0 14 0M12 18v3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Private voice assistant</span></a></li><li><a class="idea-tile" href="#finder" data-idea="science-logger" aria-pressed="false"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M4 20V4M4 20h16M8 16v-4M12 16V8M16 16v-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Science data logger</span></a></li></ul>
+  </div>
+</section>
+
+<section class="band band-habitats" aria-labelledby="habitat-heading">
+  <div class="wrap">
+    <h2 id="habitat-heading">Browse by hardware type</h2>
+    <p class="band-lead">Every gadget in the guide belongs to one of these hardware types.</p>
+    <ul class="subject-tiles cat-tiles"><li><a class="subject-tile cat-tile" href="#finder" data-cat-btn="mcu" aria-pressed="false"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M7 7h10v10H7zM10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Microcontroller brains</span><span class="tile-count">66</span></a></li><li><a class="subject-tile cat-tile" href="#finder" data-cat-btn="ai_board" aria-pressed="false"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M9 4h6v3H9zM6 7h12v11H6zM9 11h.01M15 11h.01M9 15h6M12 2v2M3 11v3M21 11v3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>AI boards</span><span class="tile-count">11</span></a></li><li><a class="subject-tile cat-tile" href="#finder" data-cat-btn="sbc" aria-pressed="false"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M3 6h18v12H3zM6 9h5v5H6zM14 9h4M14 12h4M8 18v2M16 18v2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Single-board computers</span><span class="tile-count">33</span></a></li><li><a class="subject-tile cat-tile" href="#finder" data-cat-btn="fpga" aria-pressed="false"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M4 4h16v16H4zM8 8h3v3H8zM13 8h3v3h-3zM8 13h3v3H8zM13 13h3v3h-3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>FPGA boards</span><span class="tile-count">18</span></a></li><li><a class="subject-tile cat-tile" href="#finder" data-cat-btn="robot" aria-pressed="false"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M8 8h8v8H8zM12 4v4M10 4h4M6 11H4v3h2M18 11h2v3h-2M10 12h.01M14 12h.01M9 19v2M15 19v2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Robots and robot kits</span><span class="tile-count">30</span></a></li><li><a class="subject-tile cat-tile" href="#finder" data-cat-btn="camera" aria-pressed="false"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M4 8h4l2-3h4l2 3h4v11H4zM12 10a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Cameras and vision</span><span class="tile-count">11</span></a></li><li><a class="subject-tile cat-tile" href="#finder" data-cat-btn="audio" aria-pressed="false"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M9 18V5l11-2v13M9 18a3 3 0 1 1-3-3 3 3 0 0 1 3 3zM20 16a3 3 0 1 1-3-3 3 3 0 0 1 3 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Audio and music</span><span class="tile-count">10</span></a></li><li><a class="subject-tile cat-tile" href="#finder" data-cat-btn="wearable" aria-pressed="false"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M2 12h4l2-3h8l2 3h4M6 12a3 3 0 1 0 6 0M12 12a3 3 0 1 0 6 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Wearables and glasses</span><span class="tile-count">12</span></a></li><li><a class="subject-tile cat-tile" href="#finder" data-cat-btn="radio" aria-pressed="false"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M12 13v8M8 21h8M12 13a1.5 1.5 0 1 0 0-.01M8.5 9.5a5 5 0 0 1 7 0M6 7a8.5 8.5 0 0 1 12 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Radios and mesh</span><span class="tile-count">33</span></a></li><li><a class="subject-tile cat-tile" href="#finder" data-cat-btn="kit" aria-pressed="false"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M4 8l8-4 8 4-8 4zM4 8v8l8 4 8-4V8M12 12v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Starter and learning kits</span><span class="tile-count">30</span></a></li><li><a class="subject-tile cat-tile" href="#finder" data-cat-btn="other" aria-pressed="false"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M14 6l4 4-8 8H6v-4zM12 8l4 4M4 20h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Other prototyping gear</span><span class="tile-count">7</span></a></li></ul>
+  </div>
+</section>
+
+<section class="browse" id="finder" aria-labelledby="browse-heading">
+  <div class="browse-head">
+    <div class="wrap">
+      <p class="browse-kicker">The field guide</p>
+      <h2 id="browse-heading">Search every species</h2>
+      <p class="browse-intro">Search by name, chip or maker. Narrow the list with filters. Sort by value, capacity or price.</p>
+    </div>
+  </div>
+
+  <div class="wrap finder">
+    <div class="step step-search">
+      <div class="search-row">
+        <label for="q" class="visually-hidden">Search the field guide</label>
+        <input type="search" id="q" name="q" autocomplete="off" placeholder="Search, for example ESP32, LoRa, camera or Raspberry Pi">
+        <button type="button" id="beginner-toggle" class="beginner-chip" aria-pressed="false"><svg class="chip-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> <span>Newcomer friendly</span></button>
+      </div>
+    </div>
+
+    <div class="results-bar">
+      <div class="cat-buttons" role="group" aria-label="Quick hardware type filter"><button type="button" class="tech-btn small" data-cat-btn="mcu" aria-pressed="false"><svg class="tech-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M7 7h10v10H7zM10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Microcontroller brains</span></button><button type="button" class="tech-btn small" data-cat-btn="ai_board" aria-pressed="false"><svg class="tech-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M9 4h6v3H9zM6 7h12v11H6zM9 11h.01M15 11h.01M9 15h6M12 2v2M3 11v3M21 11v3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>AI boards</span></button><button type="button" class="tech-btn small" data-cat-btn="sbc" aria-pressed="false"><svg class="tech-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M3 6h18v12H3zM6 9h5v5H6zM14 9h4M14 12h4M8 18v2M16 18v2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Single-board computers</span></button><button type="button" class="tech-btn small" data-cat-btn="fpga" aria-pressed="false"><svg class="tech-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M4 4h16v16H4zM8 8h3v3H8zM13 8h3v3h-3zM8 13h3v3H8zM13 13h3v3h-3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>FPGA boards</span></button><button type="button" class="tech-btn small" data-cat-btn="robot" aria-pressed="false"><svg class="tech-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M8 8h8v8H8zM12 4v4M10 4h4M6 11H4v3h2M18 11h2v3h-2M10 12h.01M14 12h.01M9 19v2M15 19v2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Robots and robot kits</span></button><button type="button" class="tech-btn small" data-cat-btn="camera" aria-pressed="false"><svg class="tech-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M4 8h4l2-3h4l2 3h4v11H4zM12 10a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Cameras and vision</span></button><button type="button" class="tech-btn small" data-cat-btn="audio" aria-pressed="false"><svg class="tech-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M9 18V5l11-2v13M9 18a3 3 0 1 1-3-3 3 3 0 0 1 3 3zM20 16a3 3 0 1 1-3-3 3 3 0 0 1 3 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Audio and music</span></button><button type="button" class="tech-btn small" data-cat-btn="wearable" aria-pressed="false"><svg class="tech-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M2 12h4l2-3h8l2 3h4M6 12a3 3 0 1 0 6 0M12 12a3 3 0 1 0 6 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Wearables and glasses</span></button><button type="button" class="tech-btn small" data-cat-btn="radio" aria-pressed="false"><svg class="tech-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M12 13v8M8 21h8M12 13a1.5 1.5 0 1 0 0-.01M8.5 9.5a5 5 0 0 1 7 0M6 7a8.5 8.5 0 0 1 12 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Radios and mesh</span></button><button type="button" class="tech-btn small" data-cat-btn="kit" aria-pressed="false"><svg class="tech-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M4 8l8-4 8 4-8 4zM4 8v8l8 4 8-4V8M12 12v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Starter and learning kits</span></button><button type="button" class="tech-btn small" data-cat-btn="other" aria-pressed="false"><svg class="tech-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M14 6l4 4-8 8H6v-4zM12 8l4 4M4 20h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Other prototyping gear</span></button></div>
+      <div class="results-tools">
+        <details class="more-filters" id="more-filters">
+          <summary>More filters</summary>
+          <div class="filters-panel">
+            <div class="filters-head">
+              <p class="muted">Narrow the list. Choose any boxes.</p>
+              <button type="button" id="clear-filters" class="link-btn">Clear all</button>
+            </div>
+            <div id="facets" class="facets-grid"></div>
+          </div>
+        </details>
+        <label class="sort">Sort by
+          <select id="sort">
+            <option value="match">Best match</option>
+            <option value="value">Best value</option>
+            <option value="cap">Most capacity</option>
+            <option value="price">Lowest price</option>
+            <option value="new">Newest</option>
+            <option value="az">Name, A to Z</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <section class="results" aria-labelledby="results-heading">
+      <h2 id="results-heading" class="visually-hidden">Results</h2>
+      <p id="result-count" role="status" aria-live="polite" aria-atomic="true">Loading the field guide</p>
+      <p id="filter-note" class="notice" hidden></p>
+      <ul id="cards" class="cards"></ul>
+      <div class="more-row"><button type="button" id="more" class="btn" hidden>Show more</button></div>
+      <p class="muted small price-note">Prices are estimates and can change at any time. Price and availability vary by vendor.</p>
+      <noscript><p class="notice">The search needs JavaScript. Every entry also has its own page. See the <a href="data/platforms.json">data file</a>.</p></noscript>
+    </section>
+  </div>
+</section>
+
+<section class="band band-learn" aria-labelledby="learn-heading">
+  <div class="wrap">
+    <h2 id="learn-heading">New to all this? Start with the basics</h2>
+    <p class="band-lead">Short, friendly pages for people who have never built a gadget.</p>
+    <ul class="learn-links"><li><a href="open-source.html"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M4 4h11a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3zM4 17a3 3 0 0 1 3-3h11M8 8h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>What is open source?</span></a></li><li><a href="brains.html"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M4 4h11a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3zM4 17a3 3 0 0 1 3-3h11M8 8h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Brains: microcontrollers and small computers</span></a></li><li><a href="how-it-connects.html"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M4 4h11a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3zM4 17a3 3 0 0 1 3-3h11M8 8h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>How a project fits together</span></a></li><li><a href="code-to-board.html"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M4 4h11a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3zM4 17a3 3 0 0 1 3-3h11M8 8h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>How code gets onto a board</span></a></li><li><a href="connectors.html"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M4 4h11a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3zM4 17a3 3 0 0 1 3-3h11M8 8h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Plug-and-play connectors</span></a></li><li><a href="radios.html"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M4 4h11a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3zM4 17a3 3 0 0 1 3-3h11M8 8h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Radios explained</span></a></li><li><a href="first-board.html"><svg class="tile-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M4 4h11a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3zM4 17a3 3 0 0 1 3-3h11M8 8h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Choosing your first board</span></a></li></ul>
+  </div>
+</section>
+
+<template id="card-tpl">
+  <li class="card">
+    <div class="card-body">
+      <h3 class="card-title"><a></a></h3>
+      <p class="card-maker muted small"></p>
+      <p class="card-tagline"></p>
+      <ul class="card-tags" aria-label="Labels"></ul>
+      <div class="card-meters"></div>
+    </div>
+    <button type="button" class="star-btn small" aria-pressed="false"><span class="star-label visually-hidden">Add to My List</span></button>
+  </li>
+</template>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>An AI-assisted experiment by Jeremy Riel, PhD, UIC TRAILblazer Lab. Some content was written with generative AI and may contain errors. Check details with each maker and store before you buy.</p>
+    <p>Prices are estimates and can change at any time. Price and availability vary by vendor.</p>
+    <p><a href="about.html">About this project</a> · <a href="methods.html">How we built it</a> · <a href="learn.html">Learn the Basics</a> · <a href="recipes.html">Project Recipes</a> · <a href="glossary.html">Glossary</a></p>
+    <p><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Dark mode</button></p>
+    <div class="logos logos-footer"><a class="logo-plate logo-uic" href="https://www.uic.edu" rel="noopener noreferrer"><img src="assets/img/uic-circle.svg" alt="" width="40" height="40"><span>University of Illinois<br>Chicago</span></a><a class="logo-plate logo-tb" href="https://www.trailblazerlab.org" rel="noopener noreferrer"><img src="assets/img/trailblazer-lab-logo.png" alt="TRAILblazer Lab, Teaching and Research with AI Learning" width="900" height="278"></a></div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,23 @@
+# OS Developer Field Guide security headers (Apache / LAMP hosting).
+# Edit FRAME_PARENT to your WordPress domain to allow embedding there.
+<IfModule mod_headers.c>
+  Header always set Content-Security-Policy "default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; connect-src 'self'; frame-ancestors 'self' https://www.trailblazerlab.org https://trailblazerlab.org"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+  Header always set Cross-Origin-Opener-Policy "same-origin"
+</IfModule>
+Options -Indexes
+# The WordPress plugin folder is for download only. Never execute PHP from it here.
+<IfModule mod_php.c>
+  <FilesMatch "\.php$">
+    SetHandler none
+    ForceType text/plain
+  </FilesMatch>
+</IfModule>
+<FilesMatch "\.(json|md)$">
+  Header set Cache-Control "public, max-age=3600"
+</FilesMatch>
+AddType application/json .json
+AddType text/markdown .md
+AddDefaultCharset utf-8

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" data-v="6b0a6fc73d">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; connect-src 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>How Code Gets onto a Board | OS Developer Field Guide</title>
+<meta name="description" content="How Code Gets onto a Board">
+<link rel="stylesheet" href="assets/css/site.css?v=30added637">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<script src="assets/js/common.js?v=30added637" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html"><svg class="brand-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M7 6h3v4M14 6h3v4M4 14a3.5 3.5 0 1 0 7 0 3.5 3.5 0 0 0-7 0zM13 14a3.5 3.5 0 1 0 7 0 3.5 3.5 0 0 0-7 0zM5 13l2-5M19 13l-2-5M11 13h2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>OS Developer Field Guide</span></a>
+    <nav aria-label="Main"><ul class="nav"><li><a href="index.html">Explore</a></li><li><a href="recipes.html">Project Recipes</a></li><li><a href="learn.html" aria-current="page">Learn the Basics</a></li><li><a href="glossary.html">Glossary</a></li><li><a href="mylist.html">My List <span class="count" data-list-count></span></a></li><li><a href="about.html">About</a></li></ul></nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap prose"><h1 id="how-code-gets-onto-a-board">How Code Gets onto a Board</h1>
+<p>Code is a list of instructions. You write it on your laptop. Then you send it to the board over a USB cable. The board keeps it and runs it every time it gets power. This sending step is called uploading or flashing.</p>
+<h2 id="the-three-common-paths">The three common paths</h2>
+<div class="table-wrap"><table class="compare"><thead><tr><th scope="col">Path</th><th scope="col">How it feels</th><th scope="col">Good first boards</th></tr></thead><tbody><tr><th scope="row">Blocks</th><td data-label="How it feels">Snap puzzle pieces together in a web page</td><td data-label="Good first boards">BBC micro:bit, many robot kits</td></tr><tr><th scope="row">Python</th><td data-label="How it feels">Type short, readable lines of code</td><td data-label="Good first boards">Raspberry Pi Pico, CircuitPython boards</td></tr><tr><th scope="row">Arduino C++</th><td data-label="How it feels">Type code in the Arduino app and press upload</td><td data-label="Good first boards">Arduino boards, ESP32 boards</td></tr></tbody></table></div>
+<p>Many boards support more than one path. Start with the easiest one. Move to the next one as you grow.</p>
+<h2 id="your-first-upload-step-by-step">Your first upload, step by step</h2>
+<ol>
+<li>Install a free coding app. Thonny, Mu, MakeCode and the Arduino IDE are common choices.</li>
+<li>Plug the board into your laptop with a USB cable. Make sure the cable carries data. Some cheap cables only charge.</li>
+<li>Pick your board in the app's board menu.</li>
+<li>Open the "Blink" example. Blink is the "hello world" of hardware. It flashes a tiny light on the board.</li>
+<li>Press upload or run.</li>
+<li>Watch the light blink. You just programmed a computer chip.</li>
+</ol>
+<h2 id="a-few-handy-words">A few handy words</h2>
+<ul>
+<li>An IDE is the app where you write and upload code.</li>
+<li>Firmware is the main program stored on a board.</li>
+<li>A library is ready-made code that someone shared. It saves you work.</li>
+<li>A bootloader is a tiny helper program that accepts new code.</li>
+<li>The serial monitor is a window that shows messages from your board.</li>
+</ul>
+<h2 id="ready-made-firmware">Ready-made firmware</h2>
+<p>Some projects need no coding at all. You flash a finished program onto the board and set it up in a phone app. Meshtastic radios and many smart-home gadgets work this way. These are a great first step for people who do not code yet.</p>
+<h2 id="single-board-computers-are-different">Single-board computers are different</h2>
+<p>A single-board computer runs a full operating system. You first copy that system onto a microSD card. The Raspberry Pi Imager app does this in a few clicks. Then the board starts up like a regular computer. You write code right on it, or you connect from your laptop.</p>
+<h2 id="getting-unstuck">Getting unstuck</h2>
+<p>Every tinkerer gets stuck. It is part of the hobby.</p>
+<ul>
+<li>Try a different USB cable first. Bad cables cause most upload problems.</li>
+<li>Check that the right board is picked in the app.</li>
+<li>Read the red error text. Paste it into a search engine.</li>
+<li>Ask in the board's forum. Open-source communities like to help newcomers.</li>
+</ul><nav class="learn-nav" aria-label="Field guide basics"><ol><li><a href="open-source.html">What is open source?</a></li><li><a href="brains.html">Brains: microcontrollers and small computers</a></li><li><a href="how-it-connects.html">How a project fits together</a></li><li><a href="code-to-board.html">How code gets onto a board</a></li><li><a href="connectors.html">Plug-and-play connectors</a></li><li><a href="radios.html">Radios explained</a></li><li><a href="first-board.html">Choosing your first board</a></li></ol></nav></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>An AI-assisted experiment by Jeremy Riel, PhD, UIC TRAILblazer Lab. Some content was written with generative AI and may contain errors. Check details with each maker and store before you buy.</p>
+    <p>Prices are estimates and can change at any time. Price and availability vary by vendor.</p>
+    <p><a href="about.html">About this project</a> · <a href="methods.html">How we built it</a> · <a href="learn.html">Learn the Basics</a> · <a href="recipes.html">Project Recipes</a> · <a href="glossary.html">Glossary</a></p>
+    <p><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Dark mode</button></p>
+    <div class="logos logos-footer"><a class="logo-plate logo-uic" href="https://www.uic.edu" rel="noopener noreferrer"><img src="assets/img/uic-circle.svg" alt="" width="40" height="40"><span>University of Illinois<br>Chicago</span></a><a class="logo-plate logo-tb" href="https://www.trailblazerlab.org" rel="noopener noreferrer"><img src="assets/img/trailblazer-lab-logo.png" alt="TRAILblazer Lab, Teaching and Research with AI Learning" width="900" height="278"></a></div>
+  </div>
+</footer>
+</body>
+</html>
