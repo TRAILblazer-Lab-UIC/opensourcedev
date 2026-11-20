@@ -689,3 +689,12 @@ body { line-height: 1.65; }
 .of-2 { border-left-color: var(--b-tx); }
 .of-1 { border-left-color: var(--surface-2); }
 @media (max-width: 480px) { .om-seg { font-size: .78rem; padding: 8px 2px; } }
+
+/* Family comparison tables */
+.family-table { font-size: .95rem; }
+.family-table thead th { white-space: nowrap; }
+.family-table tbody th { width: auto; min-width: 150px; }
+.family-table tr.is-here th, .family-table tr.is-here td { background: var(--g-bg); }
+.here-tag { display: inline-block; margin-left: 4px; padding: 0 8px; border-radius: 999px; font-size: .75rem; font-weight: 700; background: var(--brand); color: var(--brand-ink); }
+.crumbs { margin: 16px 0 0; font-size: .95rem; }
+.family-links a { justify-content: space-between; }
