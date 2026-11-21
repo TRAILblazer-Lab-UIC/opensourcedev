@@ -698,3 +698,5 @@ body { line-height: 1.65; }
 .here-tag { display: inline-block; margin-left: 4px; padding: 0 8px; border-radius: 999px; font-size: .75rem; font-weight: 700; background: var(--brand); color: var(--brand-ink); }
 .crumbs { margin: 16px 0 0; font-size: .95rem; }
 .family-links a { justify-content: space-between; }
+
+.tool-head.no-figure { grid-template-columns: 1fr; }
